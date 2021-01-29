@@ -16,7 +16,8 @@ export default defineComponent({
                 </div>
                 <div>
                     {
-                        defaultSlot !== undefined ? renderSlot(slots, 'default') : "没有传递默认插槽"
+                        // defaultSlot !== undefined ? renderSlot(slots, 'default') : "默认插槽1"
+                        slots.default?.() ?? "默认插槽2"
                     }
                 </div>
                 <div>
